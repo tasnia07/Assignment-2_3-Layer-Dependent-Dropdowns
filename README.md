@@ -8,3 +8,11 @@ Requirements for using the project:
 2. Install the virtualenv package :
 
   ` pip install virtualenv `
+  
+3. Create the virtual environment :
+
+  `virtualenv mypython`
+
+4. Activate the virtual environment :
+Mac OS / Linux : `source mypython/bin/activate`
+Windows: `mypthon\Scripts\activate`
