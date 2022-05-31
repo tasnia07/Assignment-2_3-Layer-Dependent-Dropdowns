@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learn Programming</title>
+
+      <!-- Static Folder -->
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}" >
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css"/>
+</head>
+<body>
+<div class="container">
+    <h1 align="center">Learn Programming</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <label>Select Language</label>
+            <select name="lang_value" data-live-search="true" id="lang_value" class="form-control"
+                    title="Select Language">
+                {% for row in data %}
+                    <option value="{{ row.id }}">{{ row.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label>Select Topic</label>
+            <select name="topic_value" data-live-search="true" id="topic_value" class="form-control"
+                    title="Select Topic"> </select>
+        </div>
+        <div class="col-md-4">
+            <label>Select What To Learn</label>
+            <select name="learn_value" data-live-search="true" id="learn_value" class="form-control"
+                    title="Select What To Learn"> </select>
+        </div>
+        <div class="col-md-12">
+            <!--<button type="submit" class="btn btn-secondary" value="submit_btn" id="submit_btn">Show Information</button>-->
+             <button type="submit" class="btn btn-primary" value="submit_btn" id="submit_btn">Show Information</button>
+        </div>
+        <div id="add_iframe">
+
+        </div>
+    </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#lang_value").selectpicker();
+
+        $("#topic_value").selectpicker();
+
+        $("#learn_value").selectpicker();
+
+        function load_data(id, url, component) {
+            $.ajax({
+                url: url,
+                method: "POST",
+                data: {id: id},
+                dataType: "json",
+                success: function (OutputArray) {
+                    var html = "";
+                    for (var count = 0; count < OutputArray.length; count++) {
+                        html += '<option value="' + OutputArray[count].id + '">' + OutputArray[count].name + "</option>";
+                    }
+
+                    component.html(html);
+                    component.selectpicker("refresh");
+                },
+            });
+        }
+
+
+        function populate_iframe(id, url, component) {
+
+            $.ajax({
+                url: url,
+                method: "POST",
+                data: {id: id},
+                dataType: "json",
+                success: function (item) {
+                    var html = "";
+                    console.log(item)
+                    html += '<iframe src="' + item + '">' + "</iframe>";
+                    console.log(html);
+                    component.html(html);
+                }
+            });
+
+        }
+
+        $(document).on("change", "#lang_value", function () {
+            var lang_id = $("#lang_value").val();
+            var url = "/topics";
+            var component = $("#topic_value");
+            load_data(lang_id, url, component);
+        });
+
+        $(document).on("change", "#topic_value", function () {
+            var topic_id = $("#topic_value").val();
+            var url = "/learn_items";
+            var component = $("#learn_value");
+            load_data(topic_id, url, component);
+        });
+
+        $(document).on("click", "#submit_btn", function () {
+            var item_id = $("#learn_value").val();
+            var url = "/get_item_link";
+            var component = $("#add_iframe");
+            populate_iframe(item_id, url, component);
+        });
+
+    });
+</script>
+</body>
+</html>
