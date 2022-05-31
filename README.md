@@ -3,7 +3,7 @@
 
 Requirements for using the project:
 
-1. Programming Language : Python 3 or above
+1. Programming Language : Python 3.7 or above
 
 2. Install the virtualenv package :
 
@@ -17,4 +17,12 @@ Requirements for using the project:
 
 Mac OS / Linux : `source mypython/bin/activate`
 
-Windows: `mypthon\Scripts\activate`
+Windows: `mypython\Scripts\activate`
+
+5. Set up Flask Framework :
+
+  `pip install Flask`
+
+6. Set up Jinja2 Template Engine : 
+
+  `pip install Jinja2`
