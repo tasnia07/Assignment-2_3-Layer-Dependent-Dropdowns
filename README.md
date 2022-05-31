@@ -14,5 +14,7 @@ Requirements for using the project:
   `virtualenv mypython`
 
 4. Activate the virtual environment :
+
 Mac OS / Linux : `source mypython/bin/activate`
+
 Windows: `mypthon\Scripts\activate`
