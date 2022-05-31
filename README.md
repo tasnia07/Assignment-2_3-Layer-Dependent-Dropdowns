@@ -7,4 +7,4 @@ Requirements for using the project:
 
 2. Install the virtualenv package :
 
-` pip install virtualenv `
+  ` pip install virtualenv `
