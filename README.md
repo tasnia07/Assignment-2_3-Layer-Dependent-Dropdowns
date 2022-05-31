@@ -3,9 +3,8 @@
 
 Requirements for using the project:
 
-1. Programming Language :
+1. Programming Language : Python 3 or above
 
-Python 3 or above
 2. Install the virtualenv package :
 
 ` pip install virtualenv `
