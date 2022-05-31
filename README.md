@@ -26,3 +26,7 @@ Windows: `mypython\Scripts\activate`
 6. Set up Jinja2 Template Engine : 
 
   `pip install Jinja2`
+
+7. MySQL Dependency:
+
+  `pip install flask-mysqldb`
