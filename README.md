@@ -2,9 +2,9 @@
 
 ## Technologies used : Python Flask Framework, HTML5, CSS3, jQuery, Ajax and MySQL Database.
 
-**Implementation of the Project :**
-
 Clone the project from repository
+
+**Implementation of the Project :**
 
 Programming Language : Python 3.7 or above
 
