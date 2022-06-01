@@ -1,32 +1,41 @@
-# Assignment02_3-Layer-Dependent-Dropdowns
-## The project is implemented using Python Flask Framework, HTML5, CSS3, jQuery, Ajax and MySQL Database.
+# Assignment 2 Title : 3 Layer Dependent Dropdowns
 
-Requirements for using the project:
+## Technologies used : Python Flask Framework, HTML5, CSS3, jQuery, Ajax and MySQL Database.
 
-1. Programming Language : Python 3.7 or above
+Implementation of the Project :
 
-2. Install the virtualenv package :
+Programming Language : Python 3.7 or above
+
+(1) Creating Environment :
+
+Step-1 : Install the virtualenv package :
 
   ` pip install virtualenv `
   
-3. Create the virtual environment :
+Step-2 : Create the virtual environment :
 
   `virtualenv mypython`
 
-4. Activate the virtual environment :
+Step-3 : Activate the virtual environment :
 
 Mac OS / Linux : `source mypython/bin/activate`
 
 Windows: `mypython\Scripts\activate`
 
-5. Set up Flask Framework :
+Step-4 : Set up Flask Framework :
 
   `pip install Flask`
 
-6. Set up Jinja2 Template Engine : 
+Step-5 : Set up Jinja2 Template Engine : 
 
   `pip install Jinja2`
 
-7. MySQL Dependency:
+(2) MySQL Workbench :
 
-  `pip install flask-mysqldb`
+Step-1 : Install ‘mysqlbd’ module in your venv. 
+
+  `pip install flask-mysqldb` 
+
+Step-2 : Write the following code. The above SQL statement will create our database geekprofile with the table accounts.
+
+Step-3 : Execute the queries from db folder.
