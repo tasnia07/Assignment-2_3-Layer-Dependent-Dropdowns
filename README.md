@@ -2,7 +2,7 @@
 
 ## Technologies used : Python Flask Framework, HTML5, CSS3, jQuery, Ajax and MySQL Database.
 
-Implementation of the Project :
+### ** Implementation of the Project :**
 
 Programming Language : Python 3.7 or above
 
@@ -32,10 +32,14 @@ Step-5 : Set up Jinja2 Template Engine :
 
 (2) MySQL Workbench :
 
-Step-1 : Install ‘mysqlbd’ module in your venv. 
+Step-1 : Install ‘mysqldb’ module in your venv. 
 
   `pip install flask-mysqldb` 
 
-Step-2 : Write the following code. The above SQL statement will create our database geekprofile with the table accounts.
+Step-2 : Create `assignment_2` database and Execute the queries from db folder.
 
-Step-3 : Execute the queries from db folder.
+(3) Create the Project using GitHub repository
+
+(4) Run the Project : 
+
+  While browsing the URL in localhost, must use `Ctrl+shift+R` to hard reload the browser at first.
