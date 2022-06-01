@@ -2,13 +2,14 @@
 
 ## Technologies used : Python Flask Framework, HTML5, CSS3, jQuery, Ajax and MySQL Database.
 
-Clone the project from repository
 
 **Implementation of the Project :**
 
 Programming Language : Python 3.7 or above
 
-(1) Creating Environment :
+(1) Clone the project from repository
+
+(2) Creating Environment :
 
 Step-1 : Install the virtualenv package :
 
@@ -32,7 +33,7 @@ Step-5 : Set up Jinja2 Template Engine :
 
   `pip install Jinja2`
 
-(2) MySQL Workbench :
+(3) MySQL Workbench :
 
 Step-1 : Install ‘mysqldb’ module in your venv. 
 
@@ -40,6 +41,6 @@ Step-1 : Install ‘mysqldb’ module in your venv.
 
 Step-2 : Create `assignment_2` database and Execute the queries from db folder.
 
-(3) Run the Project : 
+(4) Run the Project : 
 
   While browsing the URL in localhost, **_must always_** use `Ctrl+shift+R` to hard reload the browser at first before selecting the dropdowns and later as well.
