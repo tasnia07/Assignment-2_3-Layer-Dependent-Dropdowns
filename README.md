@@ -42,4 +42,4 @@ Step-2 : Create `assignment_2` database and Execute the queries from db folder.
 
 (4) Run the Project : 
 
-  While browsing the URL in localhost, **must always** use `Ctrl+shift+R` to hard reload the browser at first before selecting the dropdowns and later as well.
+  While browsing the URL in localhost, **_must always_** use `Ctrl+shift+R` to hard reload the browser at first before selecting the dropdowns and later as well.
