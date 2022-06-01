@@ -4,6 +4,8 @@
 
 **Implementation of the Project :**
 
+Clone the project from repository
+
 Programming Language : Python 3.7 or above
 
 (1) Creating Environment :
@@ -38,8 +40,6 @@ Step-1 : Install ‘mysqldb’ module in your venv.
 
 Step-2 : Create `assignment_2` database and Execute the queries from db folder.
 
-(3) Create the Project using GitHub repository
-
-(4) Run the Project : 
+(3) Run the Project : 
 
   While browsing the URL in localhost, **_must always_** use `Ctrl+shift+R` to hard reload the browser at first before selecting the dropdowns and later as well.
